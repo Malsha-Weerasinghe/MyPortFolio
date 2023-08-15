@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment1</title>
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="assests/normalize.css">
+
+
+    <style>
+        body>section{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+
+        }
+
+        body>section:first-child{
+            background: red;
+            left: 0px;
+            top: 0px;
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+        }
+
+        body>section>section{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+
+        }
+        body>section:nth-child(2){
+            background: yellow;
+            left: 0px;
+            bottom: 0px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        body>section:nth-child(3){
+            top: 0px;
+            right: 0px;
+            background: green;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+        }
+        body>section:nth-child(4){
+            bottom: 0px;
+            right: 0px;
+            background: deeppink;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        body>div{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            background: white;
+
+        }
+        body>div>div{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            background: red;
+            border-radius: 100%;
+
+        }
+        body>section:first-child>section>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        body>section:nth-child(2)>section>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+        body>section:nth-child(3)>section>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+        body>section:nth-child(4)>section>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+        body>section:nth-child(6)>div:nth-child(1){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            left: -10px;
+            top: -10px;
+        }
+        /*body>section:nth-child(6)>div:nth-child(2){*/
+        /*    position: absolute;*/
+        /*    width: 125px;*/
+        /*    height: 125px;*/
+        /*    border-bottom-right-radius: 100px;*/
+        /*    background-color: white;*/
+        /*    border: 1px solid white;*/
+        /*    left: -10px;*/
+        /*    top: -10px;*/
+        /*}*/
+
+
+    </style>
+</head>
+<body>
+<section><section><div><div></div></div></section></section>
+<section><section><div><div></div></div></section></section>
+<section><section><div><div></div></div></section></section>
+<section><section><div><div></div></div></section></section>
+<div><div></div></div>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
