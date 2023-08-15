@@ -3,153 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment1</title>
-
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="assests/normalize.css">
-
-
+    <link rel="stylesheet" href="assests/8.0.1_normalize.css">
     <style>
-        body>section{
+        body > section {
             width: 50vw;
             height: 50vh;
             position: absolute;
-
         }
 
-        body>section:first-child{
+        body > section:nth-child(1) {
             background: red;
-            left: 0px;
-            top: 0px;
-            border-left: 1px solid black;
-            border-top: 1px solid black;
+            left: 0;
+            top: 0;
         }
 
-        body>section>section{
+        body > section:nth-child(2) {
+            background: yellow;
+            bottom: 0;
+            left: 0;
+        }
+
+        body > section:nth-child(3) {
+            background: green;
+            top: 0;
+            right: 0;
+        }
+
+        body > section:nth-child(4) {
+            background: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+
+        body > section > section {
             width: 200px;
             height: 200px;
-            border-radius: 100%;
-            background-color: white;
-            position: absolute;
-            margin: auto;
-            left: 0px;
-            right: 0px;
-            top: 0px;
-            bottom: 0px;
-
-        }
-        body>section:nth-child(2){
-            background: yellow;
-            left: 0px;
-            bottom: 0px;
-            border-left: 1px solid black;
-            border-bottom: 1px solid black;
-        }
-
-        body>section:nth-child(3){
-            top: 0px;
-            right: 0px;
-            background: green;
-            border-top: 1px solid black;
-            border-right: 1px solid black;
-        }
-        body>section:nth-child(4){
-            bottom: 0px;
-            right: 0px;
-            background: deeppink;
-            border-right: 1px solid black;
-            border-bottom: 1px solid black;
-        }
-
-        body>div{
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            margin: auto;
-            width: 300px;
-            height: 300px;
+            border-radius: 200px;
             background: white;
-
-        }
-        body>div>div{
             position: absolute;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             margin: auto;
+        }
+
+        body > section > section > div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > div:nth-child(5) > div {
             width: 150px;
             height: 150px;
             background: red;
-            border-radius: 100%;
-
-        }
-        body>section:first-child>section>div>div{
-            width: 100px;
-            height: 100px;
-            background-color: red;
+            border-radius: 150px;
             position: absolute;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
             margin: auto;
         }
 
-        body>section:nth-child(2)>section>div>div{
-            width: 100px;
-            height: 100px;
-            background-color: red;
+        body > div:nth-child(5) ~ div {
+            width: 150px;
+            height: 150px;
+            background: white;
             position: absolute;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
+        }
+        body > div:nth-child(5) ~ div:nth-child(6) {
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 150px;
+        }
+        body > div:nth-child(5) ~ div:nth-child(7) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 150px;
+        }
+
+        body > div:nth-child(5) ~ div:nth-child(8) {
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 150px;
+        }
+        body > div:nth-child(5) ~ div:nth-child(9) {
+            left: 0;
+            right: 0;
+            top: 0;
             margin: auto;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+            height: 75px;
         }
-        body>section:nth-child(3)>section>div>div{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
+        body > div:nth-child(5) ~ div:nth-child(10) {
+            left: 0;
+            right: 0;
+            bottom: 0;
             margin: auto;
+            border-top-right-radius: 150px;
+            border-top-left-radius: 150px;
+            height: 75px;
         }
-        body>section:nth-child(4)>section>div>div{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            margin: auto;
+        body > div:nth-child(5) ~ div:nth-child(11) {
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 300px;
         }
-        body>section:nth-child(6)>div:nth-child(1){
-            position: absolute;
-            width: 125px;
-            height: 125px;
-            border-bottom-right-radius: 100px;
-            background-color: white;
-            border: 1px solid white;
-            left: -10px;
-            top: -10px;
-        }
-        /*body>section:nth-child(6)>div:nth-child(2){*/
-        /*    position: absolute;*/
-        /*    width: 125px;*/
-        /*    height: 125px;*/
-        /*    border-bottom-right-radius: 100px;*/
-        /*    background-color: white;*/
-        /*    border: 1px solid white;*/
-        /*    left: -10px;*/
-        /*    top: -10px;*/
-        /*}*/
 
 
     </style>
@@ -160,13 +140,14 @@
 <section><section><div><div></div></div></section></section>
 <section><section><div><div></div></div></section></section>
 <div><div></div></div>
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</section>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
 </body>
 </html>
