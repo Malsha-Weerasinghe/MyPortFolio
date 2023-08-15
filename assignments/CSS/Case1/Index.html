@@ -15,24 +15,32 @@
             background: red;
             left: 0;
             top: 0;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
         }
 
         body > section:nth-child(2) {
             background: yellow;
             bottom: 0;
             left: 0;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
         }
 
         body > section:nth-child(3) {
             background: green;
             top: 0;
             right: 0;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
         }
 
         body > section:nth-child(4) {
             background: deeppink;
             bottom: 0;
             right: 0;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
         }
 
         body > section > section {
@@ -114,7 +122,8 @@
             margin: auto;
             border-bottom-left-radius: 150px;
             border-bottom-right-radius: 150px;
-            height: 75px;
+            height: 150px;
+            width: 300px;
         }
         body > div:nth-child(5) ~ div:nth-child(10) {
             left: 0;
@@ -123,7 +132,8 @@
             margin: auto;
             border-top-right-radius: 150px;
             border-top-left-radius: 150px;
-            height: 75px;
+            height: 150px;
+            width: 300px;
         }
         body > div:nth-child(5) ~ div:nth-child(11) {
             left: 0;
