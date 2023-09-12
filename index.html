@@ -94,6 +94,18 @@
             top: 0;
             z-index: 2;
         }
+        main > section > div {
+            height: 60px;
+            background: black;
+            position: sticky;
+            top: 50px;
+            border-spacing: 0px;
+
+        }
+
+        main > section > div > h1 {
+            color: white;
+        }
         body>main>section:nth-child(1)>article>h2{
             color: white;
             position: absolute;
@@ -124,6 +136,40 @@
             right: 19%;
             top: 44%;
         }
+        main>section:nth-child(2){
+            background-color: black;
+        }
+        main>section:nth-child(2)>div>h1{
+            position: absolute;
+            top: 10px;
+            left: 10%;
+
+        }
+        main>section:nth-child(2)>figure{
+            padding-top: 10%;
+            padding-left: 15%;
+            padding-right: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        main>section:nth-child(2)>section>p{
+            display: inline-block;
+        }
+        main>section:nth-child(2)>section>p:nth-child(1){
+            color: white;
+            padding-left: 19%;
+        }
+        main>section:nth-child(2)>section>p:nth-child(2){
+            color: white;
+            padding-left: 14%
+        }
+        main>section:nth-child(2)>section>p:nth-child(3){
+            color: white;
+            padding-left: 15%;
+        }
+
+
     </style>
 </head>
 <body>
@@ -131,7 +177,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#IMAGEGALLERY"> Gallery</a></li>
+                <li><a href="#gallery"> Gallery</a></li>
                 <li><a href="#EXTRA CURRICULAR ACTIVITIES"></i>Activities</a></li>
                 <li><a href="#MYSKILLS">Skills</a></li>
                 <li><a href="#EDUCATION"></i>Education</a></li>
@@ -146,13 +192,29 @@
                 <img src="assests/images/home-pg-img.png" alt="profile">
             </aside>
             <article>
-                <h2>                                   Hello, I am Malsha Weerasinghe ツ</h2>
+                <h2>Hello, I am Malsha Weerasinghe ツ</h2>
                 <p>I am a full stack developer with a strong passion for crafting</p>
                 <p>exceptional web applications. With expertise in front-end and back-end development,</p>
                 <p>I bring a holistic approach to building</p>
                 <p>robust and user-friendly software solutions.</p>
 
             </article>
+
+        </section>
+        <section id="gallery">
+            <div>
+                <h1>IMAGEGALLERY</h1>
+            </div>
+            <figure>
+                <img src="assests/images/Rectangle 13.png" alt="png">
+                <img src="assests/images/Rectangle 14.png" alt="png">
+                <img src="assests/images/Rectangle 15.png" alt="png">
+            </figure>
+            <section>
+                <p>Wasantha Arunalu <br>IJSE - Awrudu Celebration</p>
+                <p>Project Presentation<br> at Innovesta 23’</p>
+                <p>Innovesta 23’ Prize Giving</p>
+            </section>
 
         </section>
     </main>
