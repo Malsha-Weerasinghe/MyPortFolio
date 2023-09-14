@@ -3,8 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Case 1</title>
+  <style>
+      body>section{
+          padding-top: 100px;
+          display: flex;
+          flex-direction: column;
+      }
+
+    body>section>div{
+        position: relative;
+        width: 300px;
+        height: 100px;
+        right: 200px;
+        background-color: purple;
+        margin: 10px;
+        border-radius: 30px;
+    }
+      body>section>div>h1{
+          font-size: 30px;
+          text-align: left;
+      }
+
+      body>section>div:hover{
+          transition-duration: 3s;
+          transition-property: all;
+          right: 10px;
+          background-color: lightgrey;
+      }
+      body>section>div>img{
+          font-size: 10px;
+          text-align: right;
+      }
+  </style>
 </head>
 <body>
+<section>
+<div>
+    <h1>Menu One</h1>
+
+</div>
+<div>
+    <h1>Menu Two</h1>
+</div>
+<div>
+    <h1>Menu Three</h1>
+</div>
+<div>
+    <h1>Menu Four</h1>
+</div>
+</section>
 
 </body>
 </html>
