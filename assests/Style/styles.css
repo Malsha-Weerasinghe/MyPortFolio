@@ -134,7 +134,8 @@ main>section:nth-child(2){
 main>section:nth-child(2)>div>h1{
     position: absolute;
     top: 2vh;
-    left: 10vw
+    left: 10vw;
+    font-size: 2vw;
 
 }
 main>section:nth-child(2)>section{
@@ -161,25 +162,23 @@ main>section:nth-child(3){
 }
 main>section:nth-child(3)>div>h1{
     position: absolute;
-    top: 10px;
-    left: 10%;
-
-}
-main>section:nth-child(3)>div>h1{
-    position: absolute;
-    top: 10px;
-    left: 35%;
+    top: 1vh;
+    left: 35vw;
+    font-size: 2vw;
 
 }
 main>section:nth-child(3)>img{
-    padding-top: 5%;
-    padding-left: 23%;
+    padding-top: 9vh;
+    padding-left: 23vw;
+    width: 57vw;
+    height: 61vh;
 }
 main>section:nth-child(3)>article>p{
     color: white;
-    padding-top: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-top: 5vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 1vw;
 }
 main>section:nth-child(4){
     height: 768px;
