@@ -186,13 +186,13 @@ main>section:nth-child(4){
 }
 main>section:nth-child(4)>div>h1{
     position: absolute;
-    top: 10px;
-    left: 45%;
+    top: 1vh;
+    left: 45vw;
     font-size: 2vw;
 
 }
 main>section:nth-child(4)>section{
-    padding-top: 8vh;
+    padding-top: 10vh;
     padding-left: 20vw;
     padding-right: 20vw;
     display: flex;
@@ -206,18 +206,23 @@ main>section:nth-child(5){
 main>section:nth-child(5)>h1{
     color: white;
     position: absolute;
-    top: 10px;
-    left: 45%;
+    top: 1vh;
+    left: 45vw;
+    font-size: 2vw;
 
 }
 main>section:nth-child(5)>section{
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 19vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+}
+main>section:nth-child(5)>section>div>img{
+    width: 16vw;
+    height: 45vh;
 }
 main>section:nth-child(5)>section>div>p{
     color: white;
