@@ -45,10 +45,12 @@ main {
 
 main > section {
     filter: saturate(1.4);
+    position: absolute;
 }
 main>section:nth-child(1){
     filter: saturate(1.4);
-    height: 768px;
+    height: 720px;
+    position: relative;
 }
 main>section:nth-child(1){
     background: url("../../assests/images/bg-img.png");
@@ -57,8 +59,8 @@ main>section:nth-child(1){
     background-position: center;
 }
 main>section:nth-child(1)>aside{
-    padding-top: 13%;
-    padding-left: 16%;
+    padding-top: 27vh;
+    padding-left: 16vw;
 }
 body > section {
     position: fixed;
@@ -81,38 +83,48 @@ main > section > div {
 main > section > div > h1 {
     color: white;
 }
-body>main>section:nth-child(1)>article>h2{
-    color: white;
-    position: absolute;
-    right: 20%;
-    top: 30%;
+body>main>section:nth-child(1)>section{
+    margin-left: 40%;
+
 }
-body>main>section:nth-child(1)>article>p:nth-child(2){
+body>main>section:nth-child(1)>section>h2{
     color: white;
     position: absolute;
-    right: 16%;
-    top: 35%;
+    right: 19vw;
+    top: 31vh;
+    font-size: 1.6vw;
 }
-body>main>section:nth-child(1)>article>p:nth-child(3){
+body>main>section:nth-child(1)>section>p:nth-child(2){
     color: white;
     position: absolute;
-    right: 10%;
-    top: 38%;
+    right: 14vw;
+    top: 37vh;
+    font-size: 1.1vw;
 }
-body>main>section:nth-child(1)>article>p:nth-child(4){
+body>main>section:nth-child(1)>section>p:nth-child(3){
     color: white;
     position: absolute;
-    right: 20%;
-    top: 41%;
+    right: 8vw;
+    top: 40vh;
+    font-size: 1.1vw;
 }
-body>main>section:nth-child(1)>article>p:nth-child(5){
+body>main>section:nth-child(1)>section>p:nth-child(4){
     color: white;
     position: absolute;
-    right: 19%;
-    top: 44%;
+    right: 20vw;
+    top: 43vh;
+    font-size: 1.1vw;
+}
+body>main>section:nth-child(1)>section>p:nth-child(5){
+    color: white;
+    position: absolute;
+    right: 19vw;
+    top: 46vh;
+    font-size: 1.1vw;
 }
 main>section:nth-child(2){
     height: 768px;
+    position: relative;
 }
 main>section:nth-child(2)>div>h1{
     position: absolute;
@@ -134,6 +146,9 @@ main>section:nth-child(2)>section>div>p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+main>section:nth-child(3){
+    position: relative;
 }
 main>section:nth-child(3)>div>h1{
     position: absolute;
@@ -159,6 +174,7 @@ main>section:nth-child(3)>article>p{
 }
 main>section:nth-child(4){
     height: 768px;
+    position: relative;
 }
 main>section:nth-child(4)>div>h1{
     position: absolute;
@@ -176,6 +192,7 @@ main>section:nth-child(4)>section{
 }
 main>section:nth-child(5){
     height: 768px;
+    position: relative;
 }
 main>section:nth-child(5)>h1{
     color: white;
@@ -201,6 +218,7 @@ main>section:nth-child(5)>section>div>p{
 }
 main>section:nth-child(6){
     height: 768px;
+    position: relative;
 }
 main>section:nth-child(6)>h1{
     color: white;
@@ -219,6 +237,7 @@ main>section:nth-child(6)>section{
 }
 main>section:nth-child(7){
     height: 768px;
+    position: relative;
 }
 main>section:nth-child(7)>div>h1{
     position: absolute;
@@ -232,9 +251,10 @@ main>section:nth-child(7)>img{
 }
 main>section:nth-child(8){
     height: 1000px;
+    position: relative;
 }
 main>section:nth-child(8)>div:nth-child(2){
-    position: relative;
+    position: absolute;
     width: 60%;
     height: 72%;
     background-color: #292929;
@@ -256,6 +276,7 @@ main>section:nth-child(8)>div:nth-child(2)>img{
     left: 4%;
 }
 main>section:nth-child(8)>div:nth-child(2)>p{
+    position: absolute;
     color: white;
     padding-left: 40%;
     padding-top: 20%;
@@ -268,6 +289,7 @@ footer{
     background: #393939;
 }
 footer>h2{
+    position: relative;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -275,6 +297,7 @@ footer>h2{
     padding-left: 40%;
 }
 footer>section{
+    position: relative;
     padding-left: 35%;
     padding-right: 35%;
     padding-top: 10px;
@@ -304,5 +327,7 @@ footer>small{
     top: 20px;
     padding-left: 45%;
 }
+
+
 
 
