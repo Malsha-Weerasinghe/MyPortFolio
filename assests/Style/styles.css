@@ -133,8 +133,8 @@ main>section:nth-child(2){
 }
 main>section:nth-child(2)>div>h1{
     position: absolute;
-    top: 2vh;
-    left: 10vw;
+    top: 10px;
+    left: 45%;
     font-size: 2vw;
 
 }
@@ -162,8 +162,8 @@ main>section:nth-child(3){
 }
 main>section:nth-child(3)>div>h1{
     position: absolute;
-    top: 1vh;
-    left: 35vw;
+    top: 10px;
+    left: 35%;
     font-size: 2vw;
 
 }
@@ -186,8 +186,8 @@ main>section:nth-child(4){
 }
 main>section:nth-child(4)>div>h1{
     position: absolute;
-    top: 1vh;
-    left: 45vw;
+    top: 10px;
+    left: 45%;
     font-size: 2vw;
 
 }
@@ -204,10 +204,9 @@ main>section:nth-child(5){
     position: relative;
 }
 main>section:nth-child(5)>h1{
-    color: white;
     position: absolute;
-    top: 1vh;
-    left: 45vw;
+    top: 10px;
+    left: 45%;
     font-size: 2vw;
 
 }
@@ -235,7 +234,6 @@ main>section:nth-child(6){
     position: relative;
 }
 main>section:nth-child(6)>h1{
-    color: white;
     position: absolute;
     top: 10px;
     left: 45%;
@@ -258,11 +256,14 @@ main>section:nth-child(7)>div>h1{
     position: absolute;
     top: 10px;
     left: 45%;
+    font-size: 2vw;
 
 }
 main>section:nth-child(7)>img{
     padding-top: 10%;
     padding-left: 20%;
+    width: 63vw;
+    height: 61vh;
 }
 main>section:nth-child(8){
     height: 1000px;
