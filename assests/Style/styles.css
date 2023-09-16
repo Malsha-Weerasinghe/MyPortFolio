@@ -239,6 +239,7 @@ main>section:nth-child(6)>h1{
     position: absolute;
     top: 10px;
     left: 45%;
+    font-size: 2vw;
 
 }
 main>section:nth-child(6)>section{
