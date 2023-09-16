@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 4</title>
+    <link rel="stylesheet" href="../../../../assests/8.0.1_normalize.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <style>
+        section{
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            border: 20px solid gray;
+            border-top: 20px solid red;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+        }
+        section>div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 50%;
+            border-left: 20px solid red;
+            transform: rotate(225deg);
+            transform-origin: 0% 0%;
+            z-index: 1;
+        }
+        section:hover{
+            transform: rotate(360deg);
+            transition: 2s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>
