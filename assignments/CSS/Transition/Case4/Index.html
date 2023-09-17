@@ -21,7 +21,7 @@
             right: 0;
             text-align: center;
         }
-        section>div {
+        section>div:first-child {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -32,6 +32,15 @@
             transform-origin: 0% 0%;
             z-index: 1;
         }
+        section>div:last-child{
+            position: absolute;
+            height: 46px;
+            width: 46px;
+            border-radius: 100%;
+            background: red;
+            right: 34px;
+            top: 23px;
+        }
         section:hover{
             transform: rotate(360deg);
             transition: 2s;
@@ -41,6 +50,7 @@
 </head>
 <body>
 <section>
+    <div></div>
     <div></div>
 </section>
 
