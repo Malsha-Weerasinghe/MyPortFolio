@@ -343,6 +343,13 @@ footer>small{
     top: 20px;
     padding-left: 45%;
 }
+header > nav > ul > li > a:hover{
+    color: #00BEDE;
+}
+body > h1:first-of-type > a > i:hover{
+    color: #00BEDE;
+}
+
 @media all and (min-width: 0px) and (max-width: 320px) {
     header > nav > ul > li{
         font-size: 10px;
@@ -1222,6 +1229,30 @@ footer>small{
         height: 42vh;
         border-radius: 100%;
     }
+    main>section:nth-child(1)>div>h1{
+        font-size: 19px;
+    }
+    main>section:nth-child(2)>div>h1{
+        font-size: 19px;
+    }
+    main>section:nth-child(3)>div>h1{
+        font-size: 19px;
+    }
+    main>section:nth-child(4)>div>h1{
+        font-size: 19px;
+    }
+    main>section:nth-child(5)>div>h1{
+        font-size: 19px;
+    }
+    main>section:nth-child(6)>div>h1{
+        font-size: 19px;
+    }
+    main>section:nth-child(7)>div>h1{
+        font-size: 19px;
+    }
+    main>section:nth-child(8)>div>h1{
+        font-size: 19px;
+    }
     main>section:nth-child(1)>aside{
         padding-left: 9vw;
     }
@@ -1253,7 +1284,38 @@ footer>small{
         padding-right: 8vw;
     }
     main>section:nth-child(3)>img{
-
+        padding-left: 19vw;
+        width: 64vw;
     }
+    main>section:nth-child(3)>article>p{
+        padding-left: 14vw;
+        padding-right: 14vw;
+        font-size: 14px;
+    }
+    main>section:nth-child(4)>section>img{
+        width: 60px;
+        height: 60px;
+    }
+    main>section:nth-child(5)>section>div>img{
+        width: 23vw;
+    }
+    main>section:nth-child(6)>section>img{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+    }
+    main>section:nth-child(8)>div:nth-child(2)>p{
+        font-size: 14px;
+        padding-left: 44%;
+        padding-right: 7%;
+    }
+    main>section:nth-child(8)>div:nth-child(2)>img{
+        height: 529px;
+        width: 151px;
+    }
+    footer>h2{
+        padding-left: 33%;
+    }
+
 }
 
