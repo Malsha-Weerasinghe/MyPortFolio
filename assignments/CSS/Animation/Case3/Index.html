@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 3</title>
+    <link rel="stylesheet" href="../../../../assests/8.0.1_normalize.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        body > section {
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 500%;
+            display: inline-block;
+            animation: slider 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+            position: relative;
+        }
+        body > section > section {
+            height: 100%;
+            width: 100vw;
+            display: inline-block;
+        }
+
+        body > section > section > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+            25% {
+                left: -100vw;
+            }
+            50% {
+                left: -200vw;
+            }
+            75% {
+                left: -300vw;
+            }
+            100% {
+                left: -399vw;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <img src="assests/images/img.png">
+    </section>
+    <section>
+        <img src="assests/images/img_1.png">
+    </section>
+    <section>
+        <img src="assests/images/1121098-pink-nature-wallpaper-1920x1080-lockscreen.jpg">
+    </section>
+    <section>
+        <img src="assests/images/tree-736885_1280.jpg">
+    </section>
+    <section>
+        <img src="assests/images/Zugpsitze_mountain.jpg">
+    </section>
+</section>
+
+</body>
+</html>
