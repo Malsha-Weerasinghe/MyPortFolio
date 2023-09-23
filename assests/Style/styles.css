@@ -241,12 +241,31 @@ main>section:nth-child(6)>div>h1{
 
 }
 main>section:nth-child(6)>section{
-    padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-    display: flex;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 33%;
+    width: 32vw;
+    height: 48vh;
+    border: 8px solid white;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+}
+main>section:nth-child(6)>section>a>i{
+    padding-left: 17%;
+    padding-top: 8%;
+    font-size: 20vw;
+    color: white;
+}
+main>section:nth-child(6)>section:hover{
+    border-color: #00BEDE;
+    color: #00BEDE;
+    transform: scale(1.05, 1.05);
+    transition: 2s;
+    cursor: pointer;
+}
+main>section:nth-child(6)>section>a>i:hover{
+    color: #00BEDE;
+    cursor: pointer;
 }
 main>section:nth-child(7){
     height: 768px;
