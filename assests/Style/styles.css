@@ -155,6 +155,7 @@ main>section:nth-child(2)>section>div>img:hover{
     transform: scale(1.05, 1.05);
     cursor: pointer;
     transition: 2s;
+    box-shadow:0 0 10px #00BEDE;
 }
 main>section:nth-child(2)>section>div>p{
     color: white;
@@ -217,36 +218,7 @@ main>section:nth-child(4)>section>img:hover{
 span{
     color: #00BEDE;
 }
-/*main>section:nth-child(5){*/
-/*    height: 768px;*/
-/*    position: relative;*/
-/*}*/
-/*main>section:nth-child(5)>div>h1{*/
-/*    position: absolute;*/
-/*    top: 10px;*/
-/*    left: 45%;*/
-/*    font-size: 2vw;*/
 
-/*}*/
-/*main>section:nth-child(5)>section{*/
-/*    padding-top: 19vh;*/
-/*    padding-left: 10vw;*/
-/*    padding-right: 10vw;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: space-between;*/
-
-/*}*/
-/*main>section:nth-child(5)>section>div>img{*/
-/*    width: 16vw;*/
-/*    height: 45vh;*/
-/*}*/
-/*main>section:nth-child(5)>section>div>p{*/
-/*    color: white;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: space-between;*/
-/*}*/
 main>section:nth-child(5){
     height: 760px;
     position: relative;
@@ -289,7 +261,7 @@ main>section:nth-child(5)>section>div:first-child>a>i{
     color: white;
 }
 main>section:nth-child(5)>section>div:first-child:hover{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.38);
     transition: 2s;
     cursor: pointer;
 }
@@ -316,7 +288,7 @@ main>section:nth-child(5)>section>div:last-child>a>i{
     color: white;
 }
 main>section:nth-child(5)>section>div:last-child:hover{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.38);
     transition: 2s;
     cursor: pointer;
 }
