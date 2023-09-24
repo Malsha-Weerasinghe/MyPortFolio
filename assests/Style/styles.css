@@ -214,8 +214,38 @@ main>section:nth-child(4)>section>img:hover{
     cursor: pointer;
     transition: 2s;
 }
+/*main>section:nth-child(5){*/
+/*    height: 768px;*/
+/*    position: relative;*/
+/*}*/
+/*main>section:nth-child(5)>div>h1{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 45%;*/
+/*    font-size: 2vw;*/
+
+/*}*/
+/*main>section:nth-child(5)>section{*/
+/*    padding-top: 19vh;*/
+/*    padding-left: 10vw;*/
+/*    padding-right: 10vw;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+
+/*}*/
+/*main>section:nth-child(5)>section>div>img{*/
+/*    width: 16vw;*/
+/*    height: 45vh;*/
+/*}*/
+/*main>section:nth-child(5)>section>div>p{*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
 main>section:nth-child(5){
-    height: 768px;
+    height: 760px;
     position: relative;
 }
 main>section:nth-child(5)>div>h1{
@@ -226,23 +256,72 @@ main>section:nth-child(5)>div>h1{
 
 }
 main>section:nth-child(5)>section{
-    padding-top: 19vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+main>section:nth-child(5)>section>div{
+    width: 23vw;
+    height: 32vh;
+    border-radius: 30px;
+    border: 5px solid white;
+    justify-content: center;
+    align-items: center;
+}
+main>section:nth-child(5)>section>div:first-child>h2{
+    color: white;
+    padding-left: 25%;
+    padding-top: 0;
+    display: none;
+}
+main>section:nth-child(5)>section>div:first-child:hover>h2{
+    display: block;
+}
+main>section:nth-child(5)>section>div:first-child>a>i{
+    padding-left: 25%;
+    padding-top: 11%;
+    font-size: 10vw;
+    color: white;
+}
+main>section:nth-child(5)>section>div:first-child:hover{
+    background-color: grey;
+    transition: 2s;
+    cursor: pointer;
+}
+main>section:nth-child(5)>section>div:first-child>a>i:hover{
+    color: #00BEDE;
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    transition: 2s;
+}
+main>section:nth-child(5)>section>div:last-child>h2{
+    color: white;
+    padding-left: 25%;
+    padding-top: 0;
+    display: none;
+}
+main>section:nth-child(5)>section>div:last-child:hover>h2{
+    display: block;
 
 }
-main>section:nth-child(5)>section>div>img{
-    width: 16vw;
-    height: 45vh;
-}
-main>section:nth-child(5)>section>div>p{
+main>section:nth-child(5)>section>div:last-child>a>i{
+    padding-left: 25%;
+    padding-top: 11%;
+    font-size: 10vw;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+main>section:nth-child(5)>section>div:last-child:hover{
+    background-color: grey;
+    transition: 2s;
+    cursor: pointer;
+}
+main>section:nth-child(5)>section>div:last-child>a>i:hover{
+    color: #00BEDE;
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    transition: 2s;
 }
 main>section:nth-child(6){
     height: 768px;
@@ -251,61 +330,21 @@ main>section:nth-child(6){
 main>section:nth-child(6)>div>h1{
     position: absolute;
     top: 10px;
-    left: 43%;
-    font-size: 2vw;
-
-}
-main>section:nth-child(6)>section{
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 33%;
-    width: 32vw;
-    height: 48vh;
-    border: 8px solid white;
-    justify-content: center;
-    align-items: center;
-}
-main>section:nth-child(6)>section>a>i{
-    padding-left: 17%;
-    padding-top: 8%;
-    font-size: 20vw;
-    color: white;
-}
-main>section:nth-child(6)>section:hover{
-    border-color: #00BEDE;
-    color: #00BEDE;
-    transform: scale(1.05, 1.05);
-    transition: 2s;
-    cursor: pointer;
-}
-main>section:nth-child(6)>section>a>i:hover{
-    color: #00BEDE;
-    cursor: pointer;
-    transform: rotate(360deg);
-    transition: 2s;
-}
-main>section:nth-child(7){
-    height: 768px;
-    position: relative;
-}
-main>section:nth-child(7)>div>h1{
-    position: absolute;
-    top: 10px;
     left: 45%;
     font-size: 2vw;
 
 }
-main>section:nth-child(7)>img{
+main>section:nth-child(6)>img{
     padding-top: 10%;
     padding-left: 20%;
     width: 63vw;
     height: 61vh;
 }
-main>section:nth-child(8){
+main>section:nth-child(7){
     height: 1000px;
     position: relative;
 }
-main>section:nth-child(8)>div:nth-child(2){
+main>section:nth-child(7)>div:nth-child(2){
     position: absolute;
     width: 60%;
     height: 72%;
@@ -316,18 +355,18 @@ main>section:nth-child(8)>div:nth-child(2){
     left: 0;
     bottom: 0;
 }
-main>section:nth-child(8)>div:nth-child(2)>h1{
+main>section:nth-child(7)>div:nth-child(2)>h1{
     position: absolute;
     top: 10px;
     left: 40%;
 
 }
-main>section:nth-child(8)>div:nth-child(2)>img{
+main>section:nth-child(7)>div:nth-child(2)>img{
     position: absolute;
     top: 20%;
     left: 4%;
 }
-main>section:nth-child(8)>div:nth-child(2)>p{
+main>section:nth-child(7)>div:nth-child(2)>p{
     position: absolute;
     color: white;
     padding-left: 40%;
@@ -478,67 +517,67 @@ body > h1:first-of-type > a > i:hover{
     main>section:nth-child(4){
         height: 445px;
     }
+    /*main>section:nth-child(5)>div>h1{*/
+    /*    left: 36%;*/
+    /*    font-size: 18px;*/
+    /*}*/
+    /*main>section:nth-child(5)>section{*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*main>section:nth-child(5) {*/
+    /*    position: relative;*/
+    /*    height: fit-content;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>img{*/
+    /*    width: 50vw;*/
+    /*    height: 34vh;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>p{*/
+    /*    font-size: 12px;*/
+    /*}*/
     main>section:nth-child(5)>div>h1{
-        left: 36%;
-        font-size: 18px;
-    }
-    main>section:nth-child(5)>section{
-        flex-direction: column;
-    }
-    main>section:nth-child(5) {
-        position: relative;
-        height: fit-content;
-    }
-    main>section:nth-child(5)>section>div>img{
-        width: 50vw;
-        height: 34vh;
-    }
-    main>section:nth-child(5)>section>div>p{
-        font-size: 12px;
-    }
-    main>section:nth-child(6)>div>h1{
         left: 31%;
         font-size: 18px;
     }
-    main>section:nth-child(6)>section>img{
+    main>section:nth-child(5)>section>img{
         width: 45px;
         height: 45px;
         border-radius: 100%;
     }
-    main>section:nth-child(6)>section{
+    main>section:nth-child(5)>section{
         padding-left: 10%;
         padding-right: 10%;
     }
-    main>section:nth-child(6){
+    main>section:nth-child(5){
         height: 365px;
     }
-    main>section:nth-child(7)>div>h1{
+    main>section:nth-child(6)>div>h1{
         left: 35%;
         font-size: 18px;
     }
-    main>section:nth-child(7)>img{
+    main>section:nth-child(6)>img{
         padding-left: 4%;
         padding-right: 4%;
         width: 86vw;
         height: 49vh;
     }
-    main>section:nth-child(7){
+    main>section:nth-child(6){
         height: 705px;
     }
-    main>section:nth-child(8)>div:nth-child(2)>h1{
+    main>section:nth-child(7)>div:nth-child(2)>h1{
         font-size: 18px;
         left: 29%;
     }
-    main>section:nth-child(8)>div:nth-child(2){
+    main>section:nth-child(7)>div:nth-child(2){
         width: 78%;
         height: 82%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>p{
+    main>section:nth-child(7)>div:nth-child(2)>p{
         font-size: 12px;
         padding-left: 45%;
         padding-right: 5%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>img{
+    main>section:nth-child(7)>div:nth-child(2)>img{
         width: 85px;
         height: 568px;
     }
@@ -652,67 +691,67 @@ body > h1:first-of-type > a > i:hover{
     main>section:nth-child(4){
         height: 445px;
     }
+    /*main>section:nth-child(5)>div>h1{*/
+    /*    left: 36%;*/
+    /*    font-size: 18px;*/
+    /*}*/
+    /*main>section:nth-child(5)>section{*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*main>section:nth-child(5) {*/
+    /*    position: relative;*/
+    /*    height: fit-content;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>img{*/
+    /*    width: 50vw;*/
+    /*    height: 34vh;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>p{*/
+    /*    font-size: 12px;*/
+    /*}*/
     main>section:nth-child(5)>div>h1{
-        left: 36%;
-        font-size: 18px;
-    }
-    main>section:nth-child(5)>section{
-        flex-direction: column;
-    }
-    main>section:nth-child(5) {
-        position: relative;
-        height: fit-content;
-    }
-    main>section:nth-child(5)>section>div>img{
-        width: 50vw;
-        height: 34vh;
-    }
-    main>section:nth-child(5)>section>div>p{
-        font-size: 12px;
-    }
-    main>section:nth-child(6)>div>h1{
         left: 31%;
         font-size: 18px;
     }
-    main>section:nth-child(6)>section>img{
+    main>section:nth-child(5)>section>img{
         width: 45px;
         height: 45px;
         border-radius: 100%;
     }
-    main>section:nth-child(6)>section{
+    main>section:nth-child(5)>section{
         padding-left: 10%;
         padding-right: 10%;
     }
-    main>section:nth-child(6){
+    main>section:nth-child(5){
         height: 365px;
     }
-    main>section:nth-child(7)>div>h1{
+    main>section:nth-child(6)>div>h1{
         left: 35%;
         font-size: 18px;
     }
-    main>section:nth-child(7)>img{
+    main>section:nth-child(6)>img{
         padding-left: 4%;
         padding-right: 4%;
         width: 86vw;
         height: 49vh;
     }
-    main>section:nth-child(7){
+    main>section:nth-child(6){
         height: 705px;
     }
-    main>section:nth-child(8)>div:nth-child(2)>h1{
+    main>section:nth-child(7)>div:nth-child(2)>h1{
         font-size: 18px;
         left: 29%;
     }
-    main>section:nth-child(8)>div:nth-child(2){
+    main>section:nth-child(7)>div:nth-child(2){
         width: 78%;
         height: 82%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>p{
+    main>section:nth-child(7)>div:nth-child(2)>p{
         font-size: 12px;
         padding-left: 45%;
         padding-right: 5%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>img{
+    main>section:nth-child(7)>div:nth-child(2)>img{
         width: 85px;
         height: 568px;
     }
@@ -826,67 +865,67 @@ body > h1:first-of-type > a > i:hover{
     main>section:nth-child(4){
         height: 445px;
     }
+    /*main>section:nth-child(5)>div>h1{*/
+    /*    left: 36%;*/
+    /*    font-size: 18px;*/
+    /*}*/
+    /*main>section:nth-child(5)>section{*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*main>section:nth-child(5) {*/
+    /*    position: relative;*/
+    /*    height: fit-content;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>img{*/
+    /*    width: 50vw;*/
+    /*    height: 34vh;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>p{*/
+    /*    font-size: 12px;*/
+    /*}*/
     main>section:nth-child(5)>div>h1{
-        left: 36%;
-        font-size: 18px;
-    }
-    main>section:nth-child(5)>section{
-        flex-direction: column;
-    }
-    main>section:nth-child(5) {
-        position: relative;
-        height: fit-content;
-    }
-    main>section:nth-child(5)>section>div>img{
-        width: 50vw;
-        height: 34vh;
-    }
-    main>section:nth-child(5)>section>div>p{
-        font-size: 12px;
-    }
-    main>section:nth-child(6)>div>h1{
         left: 31%;
         font-size: 18px;
     }
-    main>section:nth-child(6)>section>img{
+    main>section:nth-child(5)>section>img{
         width: 45px;
         height: 45px;
         border-radius: 100%;
     }
-    main>section:nth-child(6)>section{
+    main>section:nth-child(5)>section{
         padding-left: 10%;
         padding-right: 10%;
     }
-    main>section:nth-child(6){
+    main>section:nth-child(5){
         height: 365px;
     }
-    main>section:nth-child(7)>div>h1{
+    main>section:nth-child(6)>div>h1{
         left: 35%;
         font-size: 18px;
     }
-    main>section:nth-child(7)>img{
+    main>section:nth-child(6)>img{
         padding-left: 4%;
         padding-right: 4%;
         width: 86vw;
         height: 49vh;
     }
-    main>section:nth-child(7){
+    main>section:nth-child(6){
         height: 705px;
     }
-    main>section:nth-child(8)>div:nth-child(2)>h1{
+    main>section:nth-child(7)>div:nth-child(2)>h1{
         font-size: 18px;
         left: 29%;
     }
-    main>section:nth-child(8)>div:nth-child(2){
+    main>section:nth-child(7)>div:nth-child(2){
         width: 78%;
         height: 82%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>p{
+    main>section:nth-child(7)>div:nth-child(2)>p{
         font-size: 12px;
         padding-left: 45%;
         padding-right: 5%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>img{
+    main>section:nth-child(7)>div:nth-child(2)>img{
         width: 85px;
         height: 568px;
     }
@@ -1000,67 +1039,67 @@ body > h1:first-of-type > a > i:hover{
     main>section:nth-child(4){
         height: 445px;
     }
+    /*main>section:nth-child(5)>div>h1{*/
+    /*    left: 36%;*/
+    /*    font-size: 18px;*/
+    /*}*/
+    /*main>section:nth-child(5)>section{*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*main>section:nth-child(5) {*/
+    /*    position: relative;*/
+    /*    height: fit-content;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>img{*/
+    /*    width: 50vw;*/
+    /*    height: 34vh;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>p{*/
+    /*    font-size: 12px;*/
+    /*}*/
     main>section:nth-child(5)>div>h1{
-        left: 36%;
-        font-size: 18px;
-    }
-    main>section:nth-child(5)>section{
-        flex-direction: column;
-    }
-    main>section:nth-child(5) {
-        position: relative;
-        height: fit-content;
-    }
-    main>section:nth-child(5)>section>div>img{
-        width: 50vw;
-        height: 34vh;
-    }
-    main>section:nth-child(5)>section>div>p{
-        font-size: 12px;
-    }
-    main>section:nth-child(6)>div>h1{
         left: 31%;
         font-size: 18px;
     }
-    main>section:nth-child(6)>section>img{
+    main>section:nth-child(5)>section>img{
         width: 45px;
         height: 45px;
         border-radius: 100%;
     }
-    main>section:nth-child(6)>section{
+    main>section:nth-child(5)>section{
         padding-left: 10%;
         padding-right: 10%;
     }
-    main>section:nth-child(6){
+    main>section:nth-child(5){
         height: 365px;
     }
-    main>section:nth-child(7)>div>h1{
+    main>section:nth-child(6)>div>h1{
         left: 35%;
         font-size: 18px;
     }
-    main>section:nth-child(7)>img{
+    main>section:nth-child(6)>img{
         padding-left: 4%;
         padding-right: 4%;
         width: 86vw;
         height: 49vh;
     }
-    main>section:nth-child(7){
+    main>section:nth-child(6){
         height: 705px;
     }
-    main>section:nth-child(8)>div:nth-child(2)>h1{
+    main>section:nth-child(7)>div:nth-child(2)>h1{
         font-size: 18px;
         left: 29%;
     }
-    main>section:nth-child(8)>div:nth-child(2){
+    main>section:nth-child(7)>div:nth-child(2){
         width: 78%;
         height: 82%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>p{
+    main>section:nth-child(7)>div:nth-child(2)>p{
         font-size: 12px;
         padding-left: 45%;
         padding-right: 5%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>img{
+    main>section:nth-child(7)>div:nth-child(2)>img{
         width: 85px;
         height: 568px;
     }
@@ -1174,67 +1213,67 @@ body > h1:first-of-type > a > i:hover{
     main>section:nth-child(4){
         height: 445px;
     }
+    /*main>section:nth-child(5)>div>h1{*/
+    /*    left: 36%;*/
+    /*    font-size: 18px;*/
+    /*}*/
+    /*main>section:nth-child(5)>section{*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*main>section:nth-child(5) {*/
+    /*    position: relative;*/
+    /*    height: fit-content;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>img{*/
+    /*    width: 50vw;*/
+    /*    height: 34vh;*/
+    /*}*/
+    /*main>section:nth-child(5)>section>div>p{*/
+    /*    font-size: 12px;*/
+    /*}*/
     main>section:nth-child(5)>div>h1{
-        left: 36%;
-        font-size: 18px;
-    }
-    main>section:nth-child(5)>section{
-        flex-direction: column;
-    }
-    main>section:nth-child(5) {
-        position: relative;
-        height: fit-content;
-    }
-    main>section:nth-child(5)>section>div>img{
-        width: 50vw;
-        height: 34vh;
-    }
-    main>section:nth-child(5)>section>div>p{
-        font-size: 12px;
-    }
-    main>section:nth-child(6)>div>h1{
         left: 31%;
         font-size: 18px;
     }
-    main>section:nth-child(6)>section>img{
+    main>section:nth-child(5)>section>img{
         width: 45px;
         height: 45px;
         border-radius: 100%;
     }
-    main>section:nth-child(6)>section{
+    main>section:nth-child(5)>section{
         padding-left: 10%;
         padding-right: 10%;
     }
-    main>section:nth-child(6){
+    main>section:nth-child(5){
         height: 365px;
     }
-    main>section:nth-child(7)>div>h1{
+    main>section:nth-child(6)>div>h1{
         left: 35%;
         font-size: 18px;
     }
-    main>section:nth-child(7)>img{
+    main>section:nth-child(6)>img{
         padding-left: 4%;
         padding-right: 4%;
         width: 86vw;
         height: 49vh;
     }
-    main>section:nth-child(7){
+    main>section:nth-child(6){
         height: 705px;
     }
-    main>section:nth-child(8)>div:nth-child(2)>h1{
+    main>section:nth-child(7)>div:nth-child(2)>h1{
         font-size: 18px;
         left: 29%;
     }
-    main>section:nth-child(8)>div:nth-child(2){
+    main>section:nth-child(7)>div:nth-child(2){
         width: 78%;
         height: 82%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>p{
+    main>section:nth-child(7)>div:nth-child(2)>p{
         font-size: 12px;
         padding-left: 45%;
         padding-right: 5%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>img{
+    main>section:nth-child(7)>div:nth-child(2)>img{
         width: 85px;
         height: 568px;
     }
@@ -1281,6 +1320,9 @@ body > h1:first-of-type > a > i:hover{
     main>section:nth-child(4)>div>h1{
         font-size: 19px;
     }
+    /*main>section:nth-child(5)>div>h1{*/
+    /*    font-size: 19px;*/
+    /*}*/
     main>section:nth-child(5)>div>h1{
         font-size: 19px;
     }
@@ -1288,9 +1330,6 @@ body > h1:first-of-type > a > i:hover{
         font-size: 19px;
     }
     main>section:nth-child(7)>div>h1{
-        font-size: 19px;
-    }
-    main>section:nth-child(8)>div>h1{
         font-size: 19px;
     }
     main>section:nth-child(1)>aside{
@@ -1336,20 +1375,20 @@ body > h1:first-of-type > a > i:hover{
         width: 60px;
         height: 60px;
     }
-    main>section:nth-child(5)>section>div>img{
-        width: 23vw;
-    }
-    main>section:nth-child(6)>section>img{
+    /*main>section:nth-child(5)>section>div>img{*/
+    /*    width: 23vw;*/
+    /*}*/
+    main>section:nth-child(5)>section>img{
         width: 70px;
         height: 70px;
         border-radius: 100%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>p{
+    main>section:nth-child(7)>div:nth-child(2)>p{
         font-size: 14px;
         padding-left: 44%;
         padding-right: 7%;
     }
-    main>section:nth-child(8)>div:nth-child(2)>img{
+    main>section:nth-child(7)>div:nth-child(2)>img{
         height: 529px;
         width: 151px;
     }
