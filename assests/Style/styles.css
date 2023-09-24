@@ -214,6 +214,9 @@ main>section:nth-child(4)>section>img:hover{
     cursor: pointer;
     transition: 2s;
 }
+span{
+    color: #00BEDE;
+}
 /*main>section:nth-child(5){*/
 /*    height: 768px;*/
 /*    position: relative;*/
