@@ -321,7 +321,7 @@ main>section:nth-child(7){
 }
 main>section:nth-child(7)>div:nth-child(2){
     position: absolute;
-    width: 60%;
+    width: 70%;
     height: 72%;
     background-color: #292929;
     margin: auto;
@@ -344,9 +344,9 @@ main>section:nth-child(7)>div:nth-child(2)>img{
 main>section:nth-child(7)>div:nth-child(2)>p{
     position: absolute;
     color: white;
-    padding-left: 40%;
+    padding-left: 47%;
     padding-top: 20%;
-    padding-right: 10%;
+    padding-right: 9%;
 }
 footer{
     position: absolute;
@@ -375,7 +375,7 @@ footer>section>a>img:hover{
     transform: scale(1.15, 1.15);
     transition: 2s;
 }
-footer>button{
+footer>a>button{
     background-color: #393939;
     color: white;
     border: 1px solid white;
@@ -384,6 +384,9 @@ footer>button{
     cursor: pointer;
     margin-top: 10px;
     margin-left: 45%;
+}
+footer>a>button:hover{
+    background-color: #00BEDE;
 }
 footer>div{
     padding-top: 40px;
@@ -569,7 +572,7 @@ body > h1:first-of-type > a > i:hover{
         padding-left: 25%;
         padding-right: 25%;
     }
-    footer>button{
+    footer>a>button{
         font-size: 12px;
         margin-left: 33%;
     }
@@ -743,7 +746,7 @@ body > h1:first-of-type > a > i:hover{
         padding-left: 25%;
         padding-right: 25%;
     }
-    footer>button{
+    footer>a>button{
         font-size: 12px;
         margin-left: 33%;
     }
@@ -917,7 +920,7 @@ body > h1:first-of-type > a > i:hover{
         padding-left: 25%;
         padding-right: 25%;
     }
-    footer>button{
+    footer>a>button{
         font-size: 12px;
         margin-left: 33%;
     }
@@ -1091,7 +1094,7 @@ body > h1:first-of-type > a > i:hover{
         padding-left: 25%;
         padding-right: 25%;
     }
-    footer>button{
+    footer>a>button{
         font-size: 12px;
         margin-left: 33%;
     }
@@ -1265,7 +1268,7 @@ body > h1:first-of-type > a > i:hover{
         padding-left: 25%;
         padding-right: 25%;
     }
-    footer>button{
+    footer>a>button{
         font-size: 12px;
         margin-left: 33%;
     }
