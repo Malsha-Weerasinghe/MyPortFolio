@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <link rel="stylesheet" href="../../../../assests/8.0.1_normalize.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <style>
+        body{
+            background-color: #3b4043;
+        }
+        section>div {
+            height: 60vh;
+            width: 30vw;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: linear-gradient(45deg, #1f2025, black ) ;
+
+        }
+
+        section > div:first-child {
+            background: #DE9506;
+            animation-name: eclipse;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes eclipse {
+            0% {
+                left: 70px;
+                bottom: 70px;
+            }
+            50% {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                box-shadow: 0 0 10vw 0px #b48805;
+            }
+            100% {
+                right: 70px;
+                top: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>
