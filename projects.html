@@ -3,17 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Projects</title>
-    <link rel="stylesheet" href="../../../../assests/8.0.1_normalize.css">
+    <link rel="stylesheet" href="assests/8.0.1_normalize.css">
     <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .projects>h1{
+            color: white;
+            margin-left: 40%;
+        }
+        .projects{
+            display: flex;
+            flex-direction: column;
+        }
+        .projects>div{
+            padding-left: 5%;
+            padding-top: 40px;
+        }
+        .projects>div>img{
+            float: left;
+            padding-right: 5%;
+            width: 15%;
+        }
+        .projects>div>h3{
+            color: white;
+        }
+        .projects>div>button{
+            background-color: #393939;
+            color: white;
+            border: 1px solid white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .projects>div>button:hover{
+            border-color: #00BEDE;
+            color: #00BEDE;
+            transform: scale(1.05, 1.05);
+        }
+    </style>
+
 </head>
 <body>
 <section class="projects">
+    <h1>Projects</h1>
     <div id="project1">
-        <img src="assests/images/Screenshot (249).png" alt="png">
-        <h3>project</h3>
-        <a href="http://localhost:63342/MyPortFolio/assignments/CSS/Case1/Index.html?_ijt=oabho6lsf4hpumbn4fr38lhk6j">
+        <img src="assests/images/60f1c6c6fd257d4b997c3dd5_GettyImages-1223601895 1.png" alt="png">
+        <h3>Hostel Management System</h3>
+<!--        <a href="http://localhost:63342/MyPortFolio/assignments/CSS/Case1/Index.html?_ijt=oabho6lsf4hpumbn4fr38lhk6j">-->
             <button>View</button>
-        </a>
+<!--        </a>-->
+    </div>
+    <div id="project2">
+        <img src="assests/images/298-2983882_food-processing-industry-different-types-of-dairy-products 1.png" alt="png">
+        <h3>Dairy Delights</h3>
+        <!--        <a href="http://localhost:63342/MyPortFolio/assignments/CSS/Case1/Index.html?_ijt=oabho6lsf4hpumbn4fr38lhk6j">-->
+        <button>View</button>
+        <!--        </a>-->
+    </div>
+    <div id="project3">
+        <img src="assests/images/img.png" alt="png">
+        <h3>Dairy Delights</h3>
+        <!--        <a href="http://localhost:63342/MyPortFolio/assignments/CSS/Case1/Index.html?_ijt=oabho6lsf4hpumbn4fr38lhk6j">-->
+        <button>View</button>
+        <!--        </a>-->
     </div>
 </section>
 
