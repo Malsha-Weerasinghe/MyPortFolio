@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 4</title>
+  <link rel="stylesheet" href="../../../../assests/8.0.1_normalize.css">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <style>
+      body {
+          height: 100vh;
+          overflow: hidden;
+      }
+
+      section {
+          background-size: cover;
+          background: url("assests/images/sky.jpg") top;
+          width: 100%;
+          height: 100%;
+
+      }
+
+      section>div:first-child{
+          width: 100%;
+          height: 300px;
+          display: flex;
+          position: absolute;
+          bottom: 300px;
+          animation-name: sky;
+          animation-duration: 5s;
+          animation-direction: initial;
+          animation-iteration-count: infinite;
+      }
+
+      section>div:first-child>img{
+          width: 100%;
+          height: 300px;
+          flex-shrink: 0;
+          /*animation-name: city;*/
+          /*animation-duration: 10s;*/
+          /*animation-iteration-count: infinite;*/
+
+      }
+
+      section>div:nth-child(2) {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        animation-name: sky;
+        animation-duration: 5s;
+        animation-direction: initial;
+        animation-iteration-count: infinite;
+      }
+
+      section>div:nth-child(2)>img{
+          width: 100%;
+          height: 300px;
+
+      }
+
+      section>img:nth-child(3){
+          width: 32vw;
+          position: absolute;
+          bottom: 200px;
+          left: 34vw;
+      }
+
+      section>img:nth-child(4){
+          width: 6vw;
+          position: absolute;
+          bottom: 207px;
+          left: 36.7vw;
+          margin: auto;
+          animation-name: rotate;
+          animation-duration: 5s;
+          animation-direction: initial;
+          animation-iteration-count: infinite;
+      }
+
+      section>img:nth-child(5){
+          width: 6vw;
+          position: absolute;
+          bottom: 207px;
+          left: 56.2vw;
+          margin: auto;
+          animation-name: rotate;
+          animation-direction: initial;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+      }
+      /*section>div:first-child {*/
+      /*    width: 200%;*/
+      /*    height: 40vh;*/
+      /*    background: url("assests/images/city.png");*/
+      /*    position: relative;*/
+      /*    bottom: -17px;*/
+      /*    animation-name: city;*/
+      /*    animation-duration: 10s;*/
+      /*    animation-iteration-count: infinite;*/
+      /*}*/
+
+      @keyframes sky {
+          0% {
+              right: 0;
+          }
+          100% {
+              right: 100vw;
+          }
+      }
+
+      @keyframes rotate {
+          0% {
+              transform: rotate(360deg);
+          }
+          100% {
+              transform: rotate(0deg);
+          }
+      }
+      @keyframes city {
+          0% {
+              left: 0;
+          }
+          100% {
+              left: -100vw;
+          }
+
+      }
+
+  </style>
+</head>
+<body>
+<section>
+  <div>
+    <img src="assests/images/city.png" alt="png">
+    <img src="assests/images/city.png" alt="png">
+  </div>
+  <div><img src="assests/images/road.jpg" alt="jpg">
+    <img src="assests/images/road.jpg" alt="jpg">
+  </div>
+    <img src="assests/images/car.png" alt="png">
+    <img src="assests/images/wheel.png" alt="png">
+    <img src="assests/images/wheel.png" alt="png">
+</section>
+
+</body>
+</html>
