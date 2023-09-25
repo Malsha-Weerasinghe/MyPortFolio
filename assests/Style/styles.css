@@ -577,6 +577,176 @@ body > h1:first-of-type > a > i:hover{
     }
 }
 
+@media all and (min-width: 320px) and (max-width: 375px){
+    header > nav > ul > li{
+        font-size: 10px;
+    }
+    header{
+        width: max-content;
+        right: 0%;
+    }
+    main>section:nth-child(1)>aside>img{
+        width: 57vw;
+        height: 30vh;
+        border-radius: 100%;
+    }
+    main>section:nth-child(1)>aside {
+        padding-top: 7vh;
+        padding-left: 19vw;
+    }
+    body>main>section:nth-child(1)>section>p:nth-child(5){
+        right: 14vw;
+        top: 69vh;
+        font-size: 12px;
+        padding-left: 15%;
+    }
+    body>main>section:nth-child(1)>section>p:nth-child(4){
+        top: 65vh;
+        font-size: 12px;
+        padding-left: 15%;
+    }
+    body>main>section:nth-child(1)>section>p:nth-child(3){
+        padding-left: 15%;
+        right: 8vw;
+        top: 59vh;
+        font-size: 12px;
+    }
+    body>main>section:nth-child(1)>section>p:nth-child(2){
+        top: 53vh;
+        font-size: 12px;
+        padding-left: 15%;
+    }
+    body>main>section:nth-child(1)>section>h2{
+        padding-left: 27%;
+        top: 42vh;
+        font-size: 16px;
+    }
+    main>section:nth-child(1){
+        height: 630px;
+    }
+    main>section:nth-child(2)>div>h1{
+        left: 29%;
+        font-size: 18px;
+    }
+    main>section:nth-child(2)>section{
+        flex-direction: column;
+    }
+    main>section:nth-child(2)>section>div>img{
+        width: 61vw;
+    }
+    main>section:nth-child(2){
+        height: 1140px;
+    }
+    main>section:nth-child(2)>section>div>p{
+        font-size: 12px;
+    }
+    main>section:nth-child(3)>div>h1{
+        left: 3%;
+        font-size: 18px;
+    }
+    main>section:nth-child(3)>img{
+        padding-left: 19vw;
+        width: 62vw;
+        height: 23vh;
+    }
+    main>section:nth-child(3)>article>p{
+        padding-left: 20vw;
+        padding-right: 15vw;
+        font-size: 12px;
+    }
+    main>section:nth-child(4)>div>h1{
+        left: 34%;
+        font-size: 18px;
+    }
+    main>section:nth-child(4)>section>img{
+        width: 40px;
+        height: 40px;
+    }
+    main>section:nth-child(4){
+        height: 445px;
+    }
+    main>section:nth-child(5)>div>h1{
+        left: 31%;
+        font-size: 18px;
+    }
+    main>section:nth-child(5)>section>div>h2{
+        font-size: 10px;
+    }
+    main>section:nth-child(5)>section>div {
+        width: 22vw;
+        height: 13vh;
+    }
+    main>section:nth-child(5)>section>img{
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+    }
+    main>section:nth-child(5)>section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    main>section:nth-child(5){
+        height: 365px;
+    }
+    main>section:nth-child(6)>div>h1{
+        left: 35%;
+        font-size: 18px;
+    }
+    main>section:nth-child(6)>img{
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 86vw;
+        height: 49vh;
+    }
+    main>section:nth-child(6){
+        height: 410px;
+    }
+    main>section:nth-child(7)>div:nth-child(2)>h1{
+        font-size: 18px;
+        left: 29%;
+    }
+    main>section:nth-child(7)>div:nth-child(2){
+        width: 78%;
+        height: 82%;
+    }
+    main>section:nth-child(7)>div:nth-child(2)>p{
+        font-size: 12px;
+        padding-left: 45%;
+        padding-right: 5%;
+    }
+    main>section:nth-child(7)>div:nth-child(2)>img{
+        width: 95px;
+        height: 187px;
+        top: 70px;
+        left: 67px;
+    }
+    main>section:nth-child(7)>div:nth-child(2)>p{
+        top: 30%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    footer>h2{
+        padding-left: 25%;
+        font-size: 20px;
+    }
+    footer>section>a>img{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+    }
+    footer>section{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    footer>a>button{
+        font-size: 12px;
+        margin-left: 33%;
+    }
+    footer>small{
+        padding-left: 30%;
+    }
+}
+
 @media all and (min-width: 375px) and (max-width: 425px) {
     header > nav > ul > li{
         font-size: 10px;
