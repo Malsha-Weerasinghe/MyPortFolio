@@ -917,7 +917,7 @@ body > h1:first-of-type > a > i:hover{
     }
 }
 
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media all and (min-width: 520px) and (max-width: 768px) {
     header{
         right: 17%;
     }
