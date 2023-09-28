@@ -407,6 +407,17 @@ body > h1:first-of-type > a > i:hover{
     color: #00BEDE;
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #00BEDE;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+    background-color: #3b4043;
+}
+
 @media all and (max-width: 320px) {
     header > nav > ul > li{
         font-size: 10px;
