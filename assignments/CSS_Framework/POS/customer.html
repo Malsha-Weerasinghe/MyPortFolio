@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../../assests/8.0.1_normalize.css">
     <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/styles/customer.css">
 
 </head>
 <body>
@@ -15,26 +16,88 @@
             <a class="navbar-brand text-warning fs-4" href="#" >POS System</a>
             <div class="col-3 mx-auto" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-                    <a class="nav-link" href="customer.html">CUSTOMER</a>
-                    <a class="nav-link" href="item.html">ITEM</a>
-                    <a class="nav-link" href="order.html">ORDERS</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="customer.html">CUSTOMER</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="item.html">ITEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">ORDERS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="ml-auto">
-                <button type="button" class="btn btn-outline-warning">SIGN UP</button>
+            <div class="d-flex ml-auto">
+                <button type="button" class="btn btn-outline-warning me-2">SIGN UP</button>
                 <button type="button" class="btn btn-outline-warning">LOG OUT</button>
             </div>
         </div>
     </nav>
 </header>
-<main>
+<main class="container ">
     <section class="bg-body-secondary">
         <img src="assets/images/img.png" class="d-inline align-middle ml-3" alt="Image">
         <h2 class="d-inline align-middle ml-3">Customer</h2>
     </section>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-container">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Customer ID:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Customer Name:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Customer Address:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Customer Salary:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput4">
+                </div>
+            </div>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-success me-2">Save</button>
+                <button type="button" class="btn btn-warning me-2">Update</button>
+                <button type="button" class="btn btn-danger me-2">Delete</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <table class="table mt-5">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="text-bg-info p-3">Search Customer</div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-container2 d-flex">
+                <div class="mb-3 flex-grow-1">
+                    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Customer ID/Name">
+                </div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Name</button>
+            </div>
+                <button type="button" class="btn btn-success me-2">Search</button>
+                <button type="button" class="btn btn-warning me-2">View All</button>
+        </div>
+    </div>
 </main>
 
-
+<script src="assets/styles/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
