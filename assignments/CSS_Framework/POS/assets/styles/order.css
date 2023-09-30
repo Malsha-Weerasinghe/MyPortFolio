@@ -1,0 +1,21 @@
+.container{
+    padding-top: 2%;
+}
+body{
+    background-color: lightgrey;
+}
+.form-container {
+    max-width: 30%;
+}
+.form-label{
+    margin-bottom: 1.5px;
+}
+.p-3 {
+    background-color: white;
+}
+.table{
+    margin-left: 15%;
+}
+.row{
+    padding-top: 20px;
+}

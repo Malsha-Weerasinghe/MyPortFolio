@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../assests/8.0.1_normalize.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/styles/order.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning fs-4" href="#" >POS System</a>
+            <div class="col-3 mx-auto" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customer.html">CUSTOMER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="item.html">ITEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">ORDERS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex ml-auto">
+                <button type="button" class="btn btn-outline-warning me-2">SIGN UP</button>
+                <button type="button" class="btn btn-outline-warning">LOG OUT</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+<div class="container">
+    <div class="row">
+        <!-- Section 1 -->
+        <div class="col-md-4 mb-3">
+            <div class="container p-3 border">
+            <h3 class="text-dark bg-success p-3">Invoice Details</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Order ID:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Customer:</label>
+                                <select class="form-select" id="formGroupExampleInput2" aria-label="Floating label select example">
+<!--                                    <option selected>Open this select menu</option>-->
+<!--                                    <option value="1">One</option>-->
+<!--                                    <option value="2">Two</option>-->
+<!--                                    <option value="3">Three</option>-->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput3">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Date:</label>
+                            <input type="date" class="form-control" id="formGroupExampleInput4">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Customer ID:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput5">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Salary:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput6">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Address:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput7">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="col-md-4 mb-3">
+            <div class="container p-3 border">
+            <h3 class="text-dark bg-success p-3">Item Select</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md 6">
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Item:</label>
+                                <select class="form-select" id="formGroupExampleInput8" aria-label="Floating label select example">
+                                    <!--                                    <option selected>Open this select menu</option>-->
+                                    <!--                                    <option value="1">One</option>-->
+                                    <!--                                    <option value="2">Two</option>-->
+                                    <!--                                    <option value="3">Three</option>-->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Item Name:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput9">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Item Code:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput10">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput11" class="form-label">Price:</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput11">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput12" class="form-label">QtyOnH:</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput12" class="form-label">Order Quantity:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput13">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger me-2">Add Item</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="col-md-4 mb-3">
+            <div class="container p-3">
+                <h4 class="text-primary">Total:</h4>
+                <h4 class="text-danger">Sub Total:</h4>
+                <div class="row">
+                    <div class="col-md 6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Cash:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput14">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Discount:</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput15">
+                        </div>
+                        </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Balance:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput16">
+                    </div>
+                    </div>
+                <button type="button" class="btn btn-success me-2">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-md-6">
+        <table class="table mt-5">
+            <thead>
+            <tr>
+                <th scope="col" >Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</main>
+<script src="assets/styles/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

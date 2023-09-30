@@ -9,10 +9,6 @@
     max-width: 50%;
     margin-top: 2%;
 }
-.btn{
-    margin-left: 5%;
-    width: max-content;
-}
 .d-flex{
     width: max-content;
 }
@@ -22,4 +18,7 @@
 }
 .ml-auto>btn{
     width: 22%;
+}
+body{
+    background-color: lightgrey;
 }
