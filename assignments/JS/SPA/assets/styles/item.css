@@ -1,0 +1,24 @@
+.form-container {
+    max-width: 50%;
+}
+.text-bg-info {
+    max-width: 30%;
+    margin-top: 2%;
+}
+.form-container2{
+    max-width: 50%;
+    margin-top: 2%;
+}
+.d-flex{
+    width: max-content;
+}
+.dropdown-toggle{
+    max-width: max-content;
+    height: 10%;
+}
+.ml-auto>btn{
+    width: 22%;
+}
+body{
+    background-color: lightgrey;
+}
