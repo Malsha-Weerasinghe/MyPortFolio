@@ -31,7 +31,7 @@
                             <a class="nav-link" id="btnItem">ITEM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="BtnOrder">ORDERS</a>
+                            <a class="nav-link" id="btnOrder">ORDERS</a>
                         </li>
                     </ul>
                 </div>
@@ -355,6 +355,13 @@
         document.getElementById("Customer").style.display="none";
         document.getElementById("Item").style.display="block";
         document.getElementById("Orders").style.display="none";
+    });
+
+    document.getElementById("btnOrder").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("Customer").style.display="none";
+        document.getElementById("Item").style.display="none";
+        document.getElementById("Orders").style.display="block";
     });
 </script>
 
