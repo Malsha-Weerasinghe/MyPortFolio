@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="assets/styles/item.css">
     <link rel="stylesheet" href="assets/styles/order.css">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.min.css">
-
 
 </head>
 <body>
@@ -348,7 +346,7 @@
         </table>
     </div>
 </main>
-<script src="assets/js/bootstrap.min.js"></script>
+
 <script>
     document.getElementById("Customer").style.display="none";
     document.getElementById("Item").style.display="none";
@@ -387,7 +385,7 @@
     let btnGetAll = document.querySelector("#btnViewCus");
     let tBody = document.querySelector("#tblCustomer");
 
-    //select 4 text fields
+
     let txtID = document.querySelector("#txtCustomerID");
     let txtName = document.querySelector("#txtCustomerName");
     let txtAddress = document.querySelector("#txtCustomerAddress");
@@ -395,24 +393,24 @@
 
     var customers = [
         {id: "C001", name: "Malsha", address: "Matara", salary: 200000.00},
-        {id: "C002", name: "Vihanga", address: "Galle", salary: 2000.22}
+        {id: "C002", name: "Vihanga", address: "Matara", salary: 2000.22}
     ];
 
-    //save a customer
+
     btnSave.addEventListener("click", function () {
-        //create customer object and fill all the data
+
         var customer = {
             id: txtID.value,
             name: txtName.value,
             address: txtAddress.value,
             salary: txtSalary.value
         }
-        //add customer to object to the array
+
         customers.push(customer);
         console.log(customers);
     });
 
-    //load all customers from the array to the table
+
     btnGetAll.addEventListener("click", function () {
         for (let i = 0; i < customers.length; i++) {
             let tr = document.createElement("tr");
