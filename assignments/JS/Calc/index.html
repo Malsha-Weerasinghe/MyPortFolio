@@ -8,10 +8,11 @@
 
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: gray;
         }
 
         .calculator {
+            background-color: black;
             max-width: 400px;
             margin: 0 auto;
         }
@@ -30,34 +31,42 @@
 <div class="container mt-5">
     <div class="calculator card">
         <div class="card-body">
-            <input type="text" class="form-control mb-2" id="display">
+            <div class="row">
+                <div class="col-9">
+                    <input type="text" class="form-control mb-2" id="display">
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-danger btn-block" onclick="clearDisplay()">C</button>
+                </div>
+            </div>
+
 
             <div class="row">
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('1')">1</button></div>
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('2')">2</button></div>
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('3')">3</button></div>
-                <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('+')">+</button></div>
+                <div class="col"><button class="btn btn-warning btn-block" onclick="appendToDisplay('+')">+</button></div>
             </div>
 
             <div class="row">
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('4')">4</button></div>
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('5')">5</button></div>
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('6')">6</button></div>
-                <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('-')">-</button></div>
+                <div class="col"><button class="btn btn-warning btn-block" onclick="appendToDisplay('-')">-</button></div>
             </div>
 
             <div class="row">
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('7')">7</button></div>
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('8')">8</button></div>
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('9')">9</button></div>
-                <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('*')">*</button></div>
+                <div class="col"><button class="btn btn-warning btn-block" onclick="appendToDisplay('*')">*</button></div>
             </div>
 
             <div class="row">
                 <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('0')">0</button></div>
-                <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="calculate()">=</button></div>
-                <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="clearDisplay()">C</button></div>
-                <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('/')">/</button></div>
+                <div class="col"><button class="btn btn-primary btn-block calculator-button" onclick="appendToDisplay('.')">.</button></div>
+                <div class="col"><button class="btn btn-success btn-block" onclick="calculate()">=</button></div>
+                <div class="col"><button class="btn btn-warning btn-block" onclick="appendToDisplay('/')">/</button></div>
             </div>
         </div>
     </div>
