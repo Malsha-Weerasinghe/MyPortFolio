@@ -78,7 +78,7 @@ function setBorder(bol, ob) {
 
 }
 
-function checkAll() {
+function checkAllItem() {
     for (let i = 0; i < i_vArray.length; i++) {
         if (!checkValidations(i_vArray[i])) return false;
     }
