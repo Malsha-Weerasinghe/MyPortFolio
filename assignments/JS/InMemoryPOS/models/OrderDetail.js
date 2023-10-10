@@ -1,6 +1,7 @@
-export var orderDetails = {
-    oid:"",
-    code:"",
-    qty:0,
-    unitPrice:0
+let orderDetails = {
+    itemCode:"",
+    itemName: "",
+    itemUnitPrice: "",
+    itemQty: "",
+    itemTotal:""
 }

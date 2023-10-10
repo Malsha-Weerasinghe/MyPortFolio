@@ -1,6 +1,6 @@
-export var order = {
-    oid:"",
+let orderOb={
+    id:"",
+    customerId:"",
     date:"",
-    customerID:"",
-    orderDetails:[]
+    orderDetail:[]
 }

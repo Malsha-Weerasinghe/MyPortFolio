@@ -319,8 +319,8 @@
     </div>
     </div>
     <div class="col-md-6">
-        <table class="table mt-5">
-            <thead>
+        <table class="table table-bordered table-hover">
+            <thead class="bg-danger text-white">
             <tr>
                 <th scope="col" >Item Code</th>
                 <th scope="col">Item Name</th>
@@ -329,14 +329,7 @@
                 <th scope="col">Total</th>
             </tr>
             </thead>
-            <tbody>
-            <!--            <tr>-->
-            <!--                <th scope="row">I001</th>-->
-            <!--                <td>Bat</td>-->
-            <!--                <td>500</td>-->
-            <!--                <td>2</td>-->
-            <!--                <td>1000</td>-->
-            <!--            </tr>-->
+            <tbody id="tblOrder">
             </tbody>
         </table>
     </div>
@@ -349,13 +342,13 @@
 <script src="models/Customer.js"></script>
 <script src="models/Item.js"></script>
 <script src="models/Order.js"></script>
-<script src="models/OrderDetails.js"></script>
+<script src="models/OrderDetail.js"></script>
 <script src="controllers/CustomerController.js"></script>
 <script src="controllers/ItemController.js"></script>
-<script src="controllers/PurchaseOrderController.js"></script>
+<script src="controllers/OrderController.js"></script>
 <script src="controllers/validations/customerValidations.js"></script>
 <script src="controllers/validations/itemValidations.js"></script>
-<script src="controllers/validations/OrderValidations.js"></script>
+<!--<script src="controllers/validations/OrderValidations.js"></script>-->
 
 
 </body>
