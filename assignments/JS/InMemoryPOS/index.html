@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.css">
 
+
 </head>
 <body>
 <header>
@@ -74,9 +75,9 @@
                 </div>
             </div>
             <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-success me-2" id="btnSaveCus" >Save</button>
-                <button type="button" class="btn btn-warning me-2" id="btnUpCus" >Update</button>
-                <button type="button" class="btn btn-danger me-2" id="btnDelCus" >Delete</button>
+                <button class="btn btn-success me-2" id="btnSaveCus" >Save</button>
+                <button class="btn btn-warning me-2" id="btnUpCus" >Update</button>
+                <button class="btn btn-danger me-2" id="btnDelCus" >Delete</button>
                 <button class="btn btn-danger" id="btnClearAll">Clear All</button>
             </div>
         </div>
@@ -84,10 +85,10 @@
             <table class="table table-bordered table-hover">
                 <thead class="bg-danger text-white">
                 <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Salary</th>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Salary</th>
                 </tr>
                 </thead>
                 <tbody id="tblCustomer">
@@ -348,41 +349,19 @@
 
 <script src="assets/styles/bootstrap/js/jquery-3.7.1.min.js"></script>
 <script src="assets/styles/bootstrap/js/bootstrap.min.js"></script>
-<script src="controllers/CustomerController.js"></script>
+<script src="controllers/dashboardController.js"></script>
 <script src="db/db.js"></script>
+<script src="models/Customer.js"></script>
+<script src="models/Item.js"></script>
+<script src="models/Order.js"></script>
+<script src="models/OrderDetails.js"></script>
+<script src="controllers/CustomerController.js"></script>
+<script src="controllers/ItemController.js"></script>
+<script src="controllers/PurchaseOrderController.js"></script>
+<script src="controllers/validations/customerValidations.js"></script>
+<script src="controllers/validations/ItemValidations.js"></script>
+<script src="controllers/validations/OrderValidations.js"></script>
 
-<script>
-    document.getElementById("Customer").style.display="none";
-    document.getElementById("Item").style.display="none";
-    document.getElementById("Orders").style.display="none";
 
-    document.getElementById("btnCustomer").addEventListener("click",function (){
-        document.getElementById("Home").style.display="none";
-        document.getElementById("Customer").style.display="block";
-        document.getElementById("Item").style.display="none";
-        document.getElementById("Orders").style.display="none";
-    });
-
-    document.getElementById("btnItem").addEventListener("click",function (){
-        document.getElementById("Home").style.display="none";
-        document.getElementById("Customer").style.display="none";
-        document.getElementById("Item").style.display="block";
-        document.getElementById("Orders").style.display="none";
-    });
-
-    document.getElementById("btnOrder").addEventListener("click",function (){
-        document.getElementById("Home").style.display="none";
-        document.getElementById("Customer").style.display="none";
-        document.getElementById("Item").style.display="none";
-        document.getElementById("Orders").style.display="block";
-    });
-
-    document.getElementById("btnHome").addEventListener("click",function (){
-        document.getElementById("Home").style.display="block";
-        document.getElementById("Customer").style.display="none";
-        document.getElementById("Item").style.display="none";
-        document.getElementById("Orders").style.display="none";
-    });
-</script>
 </body>
 </html>
