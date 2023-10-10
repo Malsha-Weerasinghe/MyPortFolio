@@ -11,11 +11,14 @@ var itemDB = [
     {code:"I00-003",name:"Trouser",qty: 400,price: 245.00}
 ];
 
-var orderDB = [
-    {oid:"OID-001", date:"2023/10/06", customerID:"C00-001",
-        orderDetails:[
-            {oid:"OID-001", code:"I00-001", qtyOnHand:10, unitPrice:145.00},
-            {oid:"OID-001", code:"I00-002", qtyOnHand:2, unitPrice:345.00}
-        ]
-    }
-];
+// var orderDB = [
+//     {oid:"OID-001", date:"2023/10/06", customerID:"C00-001",
+//         orderDetails:[
+//             {oid:"OID-001", code:"I00-001", qtyOnHand:10, unitPrice:145.00},
+//             {oid:"OID-001", code:"I00-002", qtyOnHand:2, unitPrice:345.00}
+//         ]
+//     }
+// ];
+export var orders = [];
+
+export var orderDetail = [];
