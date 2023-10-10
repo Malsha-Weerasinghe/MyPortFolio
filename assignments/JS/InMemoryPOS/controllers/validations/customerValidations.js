@@ -15,10 +15,10 @@ function clearCustomerInputFields() {
     $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").val("");
     $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").css("border", "1px solid #ced4da");
     $("#txtCustomerID").focus();
-    setBtn();
+    setBtnCustomer();
 }
 
-setBtn();
+setBtnCustomer();
 
 //disable tab
 $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("keydown keyup", function (e) {
@@ -31,20 +31,20 @@ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("
     }
 
     //check validations
-    checkValidations(c_vArray[indexNo]);
+    checkValidationsCustomer(c_vArray[indexNo]);
 
-    setBtn();
+    setBtnCustomer();
 
     //If the enter key pressed cheque and focus
     if (e.key == "Enter") {
 
         if (e.target.id != c_vArray[c_vArray.length - 1].field.attr("id")) {
             //check validation is ok
-            if (checkValidations(c_vArray[indexNo])) {
+            if (checkValidationsCustomer(c_vArray[indexNo])) {
                 c_vArray[indexNo + 1].field.focus();
             }
         } else {
-            if (checkValidations(c_vArray[indexNo])) {
+            if (checkValidationsCustomer(c_vArray[indexNo])) {
                 saveCustomer();
             }
         }
@@ -52,7 +52,7 @@ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on("
 });
 
 
-function checkValidations(object) {
+function checkValidationsCustomer(object) {
     if (object.regEx.test(object.field.val())) {
         setBorder(true, object)
         return true;
@@ -78,18 +78,18 @@ function setBorder(bol, ob) {
 
 }
 
-function checkAll() {
+function checkAllCustomer() {
     for (let i = 0; i < c_vArray.length; i++) {
-        if (!checkValidations(c_vArray[i])) return false;
+        if (!checkValidationsCustomer(c_vArray[i])) return false;
     }
     return true;
 }
 
-function setBtn() {
+function setBtnCustomer() {
     $("#btnDelCus").prop("disabled", true);
     $("#btnUpCus").prop("disabled", true);
 
-    if (checkAll()) {
+    if (checkAllCustomer()) {
         $("#btnSaveCus").prop("disabled", false);
     } else {
         $("#btnSaveCus").prop("disabled", true);

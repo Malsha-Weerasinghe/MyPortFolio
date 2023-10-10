@@ -3,7 +3,7 @@ getAllCustomers();
 
 //add customer event
 $("#btnSaveCus").click(function () {
-    if (checkAll()){
+    if (checkAllCustomer()){
         saveCustomer();
     }else{
         alert("Error");

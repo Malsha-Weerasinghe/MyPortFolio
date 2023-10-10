@@ -15,36 +15,36 @@ function clearItemInputFields() {
     $("#itemCode,#itemName,#itemQty,#itemPrice").val("");
     $("#itemCode,#itemName,#itemQty,#itemPrice").css("border", "1px solid #ced4da");
     $("#itemCode").focus();
-    setBtn();
+    setBtnItem();
 }
 
-setBtn();
+setBtnItem();
 
 //disable tab
-$("#itemCode,#itemName,#itemQty,#itemPrice").on("keydown keyup", function (e) {
+$("#itemCode,#itemName,#itemQty,#itemPrice").on("keydown keyup", function (a) {
     //get the index number of data input fields indexNo
-    let indexNo = i_vArray.indexOf(i_vArray.find((i) => i.field.attr("id") == e.target.id));
+    let indexNo = i_vArray.indexOf(i_vArray.find((i) => i.field.attr("code") == a.target.code));
 
     //Disable tab key
-    if (e.key == "Tab") {
-        e.preventDefault();
+    if (a.key == "Tab") {
+        a.preventDefault();
     }
 
     //check validations
-    checkValidations(i_vArray[indexNo]);
+    checkValidationsItem(i_vArray[indexNo]);
 
-    setBtn();
+    setBtnItem();
 
     //If the enter key pressed cheque and focus
-    if (e.key == "Enter") {
+    if (a.key == "Enter") {
 
-        if (e.target.id != i_vArray[i_vArray.length - 1].field.attr("id")) {
+        if (a.target.code != i_vArray[i_vArray.length - 1].field.attr("code")) {
             //check validation is ok
-            if (checkValidations(i_vArray[indexNo])) {
+            if (checkValidationsItem(i_vArray[indexNo])) {
                 i_vArray[indexNo + 1].field.focus();
             }
         } else {
-            if (checkValidations(i_vArray[indexNo])) {
+            if (checkValidationsItem(i_vArray[indexNo])) {
                 saveItem();
             }
         }
@@ -52,7 +52,7 @@ $("#itemCode,#itemName,#itemQty,#itemPrice").on("keydown keyup", function (e) {
 });
 
 
-function checkValidations(object) {
+function checkValidationsItem(object) {
     if (object.regEx.test(object.field.val())) {
         setBorder(true, object)
         return true;
@@ -80,16 +80,16 @@ function setBorder(bol, ob) {
 
 function checkAllItem() {
     for (let i = 0; i < i_vArray.length; i++) {
-        if (!checkValidations(i_vArray[i])) return false;
+        if (!checkValidationsItem(i_vArray[i])) return false;
     }
     return true;
 }
 
-function setBtn() {
+function setBtnItem() {
     $("#btnDelItem").prop("disabled", true);
     $("#btnUpItem").prop("disabled", true);
 
-    if (checkAll()) {
+    if (checkAllItem()) {
         $("#btnSaveItem").prop("disabled", false);
     } else {
         $("#btnSaveItem").prop("disabled", true);
