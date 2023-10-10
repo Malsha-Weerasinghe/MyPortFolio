@@ -35,7 +35,7 @@ function bindTrEvents() {
 
 //delete btn event
 $("#btnDelItem").click(function () {
-    let id = $("#itemCode").val();
+    let code = $("#itemCode").val();
 
     let consent = confirm("Do you want to delete.?");
     if (consent) {
@@ -126,7 +126,7 @@ function getAllItems() {
     }
 }
 
-function deleteItem(id) {
+function deleteItem(code) {
     for (let i = 0; i < itemDB.length; i++) {
         if (itemDB[i].code == code) {
             itemDB.splice(i, 1);

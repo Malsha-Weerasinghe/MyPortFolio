@@ -17,7 +17,7 @@ $("#btnViewCus").click(function () {
 });
 
 //bind tr events for getting back data of the rows to text fields
-function bindTrEvents() {
+function bindTrEventsCustomer() {
     $('#tblCustomer>tr').click(function () {
         //get the selected rows data
         let id = $(this).children().eq(0).text();
@@ -122,7 +122,7 @@ function getAllCustomers() {
         //invoke this method every time
         // we add a row // otherwise click
         //event will not work
-        bindTrEvents();
+        bindTrEventsCustomer();
     }
 }
 
