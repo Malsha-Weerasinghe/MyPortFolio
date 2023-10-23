@@ -6,9 +6,9 @@ var customerDB = [
 ];
 
 var itemDB = [
-    {code:"I00-001",name:"Skirt",qty: 100,price: 145.00},
-    {code:"I00-002",name:"Blouse",qty: 150,price: 345.00},
-    {code:"I00-003",name:"Trouser",qty: 400,price: 245.00}
+    {code:"I00-001",name:"Skirt",price: 145.00,qty: 100},
+    {code:"I00-002",name:"Blouse",price: 345.00,qty: 150},
+    {code:"I00-003",name:"Trouser",price: 245.00,qty: 400}
 ];
 
 var orderDB= [];

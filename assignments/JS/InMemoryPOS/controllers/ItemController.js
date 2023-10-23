@@ -22,14 +22,14 @@ function bindTrEvents() {
         //get the selected rows data
         let code = $(this).children().eq(0).text();
         let name = $(this).children().eq(1).text();
-        let qty = $(this).children().eq(2).text();
         let price = $(this).children().eq(3).text();
+        let qty = $(this).children().eq(2).text();
 
         //set the selected rows data to the input fields
         $("#itemCode").val(code);
         $("#itemName").val(name);
-        $("#itemQty").val(qty);
         $("#itemPrice").val(price);
+        $("#itemQty").val(qty);
     })
 }
 
@@ -74,8 +74,8 @@ function saveItem() {
 
         //if the item is not available then add him to the array
         let itemName = $("#itemName").val();
-        let itemQty = $("#itemQty").val();
         let itemPrice = $("#itemPrice").val();
+        let itemQty = $("#itemQty").val();
 
         //by using this one we can create a new object using
         //the item model with same properties
@@ -84,8 +84,8 @@ function saveItem() {
         //assigning new values for the item object
         newItem.code = itemCode;
         newItem.name = itemName;
-        newItem.qty = itemQty;
         newItem.price = itemPrice;
+        newItem.qty = itemQty;
 
         //add item record to the item array (DB)
         itemDB.push(newItem);
@@ -106,14 +106,14 @@ function getAllItems() {
     for (let i = 0; i < itemDB.length; i++) {
         let code = itemDB[i].code;
         let name = itemDB[i].name;
-        let qty = itemDB[i].qty;
         let price = itemDB[i].price;
+        let qty = itemDB[i].qty;
 
         let row = `<tr>
                      <td>${code}</td>
                      <td>${name}</td>
-                     <td>${qty}</td>
                      <td>${price}</td>
+                     <td>${qty}</td>             
                     </tr>`;
 
         // //and then append the row to tableBody
@@ -154,12 +154,12 @@ function updateItem(code) {
             //if the item available can we update.?
 
             let itemName = $("#itemName").val();
-            let itemQty = $("#itemQty").val();
             let itemPrice = $("#itemPrice").val();
+            let itemQty = $("#itemQty").val();
 
             item.name = itemName;
-            item.qty = itemQty;
             item.price = itemPrice;
+            item.qty = itemQty;
 
             getAllItems();
         }

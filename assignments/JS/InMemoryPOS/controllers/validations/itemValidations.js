@@ -8,12 +8,13 @@ const ITEM_PRICE_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 let i_vArray = new Array();
 i_vArray.push({field: $("#itemCode"), regEx: ITEM_CODE_REGEX});
 i_vArray.push({field: $("#itemName"), regEx: ITEM_NAME_REGEX});
-i_vArray.push({field: $("#itemQty"), regEx: ITEM_QTY_REGEX});
 i_vArray.push({field: $("#itemPrice"), regEx: ITEM_PRICE_REGEX});
+i_vArray.push({field: $("#itemQty"), regEx: ITEM_QTY_REGEX});
+
 
 function clearItemInputFields() {
-    $("#itemCode,#itemName,#itemQty,#itemPrice").val("");
-    $("#itemCode,#itemName,#itemQty,#itemPrice").css("border", "1px solid #ced4da");
+    $("#itemCode,#itemName,#itemPrice,#itemQty").val("");
+    $("#itemCode,#itemName,#itemPrice,#itemQty").css("border", "1px solid #ced4da");
     $("#itemCode").focus();
     setBtnItem();
 }
@@ -21,7 +22,7 @@ function clearItemInputFields() {
 setBtnItem();
 
 //disable tab
-$("#itemCode,#itemName,#itemQty,#itemPrice").on("keydown keyup", function (a) {
+$("#itemCode,#itemName,#itemPrice,#itemQty").on("keydown keyup", function (a) {
     //get the index number of data input fields indexNo
     let indexNo = i_vArray.indexOf(i_vArray.find((i) => i.field.attr("code") == a.target.code));
 

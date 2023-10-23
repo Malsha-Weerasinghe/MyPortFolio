@@ -55,8 +55,20 @@ $(document).ready(function () {
     // Set the txtOrderID to the next order ID
     $('#txtOrderID').val(maxOrderId + 1);
 });
+function populateCustomerDropdown() {
+    const selectCusID = $('#selectCusID');
 
+    // Clear the existing options
+    selectCusID.empty();
 
+    // Add a default option
+    selectCusID.append('<option value="">Select Customer</option>');
+
+    // Populate the dropdown with customer IDs from customerDB
+    customerDB.forEach(function (customer) {
+        selectCusID.append(`<option value="${customer.id}">${customer.id}</option>`);
+    });
+}
 
 $('#selectCusID').change(function(){
 
@@ -70,7 +82,22 @@ $('#selectCusID').change(function(){
         }
     }
 });
+populateCustomerDropdown();
 
+function populateItemDropdown() {
+    const selectItemCode = $('#selectItemCode');
+
+    // Clear the existing options
+    selectItemCode.empty();
+
+    // Add a default option
+    selectItemCode.append('<option value="">Select Item</option>');
+
+    // Populate the dropdown with customer IDs from customerDB
+    itemDB.forEach(function (item) {
+        selectItemCode.append(`<option value="${item.code}">${item.code}</option>`);
+    });
+}
 $('#selectItemCode').change(function(){
 
     for (let i=0; i < itemDB.length; i++){
@@ -83,7 +110,7 @@ $('#selectItemCode').change(function(){
         }
     }
 });
-
+populateItemDropdown();
 $('#btnAddToTable').click(function (){
     var itemCode = $('#selectItemCode').val();
     var name = $('#txtItemDescription').val();

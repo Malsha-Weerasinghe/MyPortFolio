@@ -1,6 +1,6 @@
 let item={
     code:"",
     name:"",
-    qty:"",
-    price:0
+    price:0,
+    qty:""
 }
