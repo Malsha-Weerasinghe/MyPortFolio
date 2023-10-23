@@ -213,11 +213,9 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>Customer :</label>
-                                            <select class="form-control" id="selectCusID">
-
+                                            <select class="form-select text-dark "
+                                                    aria-label="Default select example" id="selectCusID">
                                             </select>
-                                            <span class="control-error"
-                                                  id="cus-empty-error"></span>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -260,9 +258,9 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label>Item :</label>
-                                            <select class="form-control" id="selectItemCode"></select>
-                                            <span class="control-error"
-                                                  id="item-empty-error"></span>
+                                            <select class="form-select text-dark "
+                                                    aria-label="Default select example" id="selectItemCode">
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -294,8 +292,7 @@
                                     <div class="col-12 mt-4">
                                         <div class="form-group">
                                             <label>Order Quantity :</label>
-                                            <input class="form-control" id="txtQty" min="1" type="number">
-                                            <span class="control-error" id="order-qty-empty-error"></span>
+                                            <input type="email" class="form-control" id="txtQty">
                                         </div>
                                     </div>
                                 </div>
@@ -335,22 +332,20 @@
                             </div>
                             <div class="col-6 mt-2">
                                 <div class="form-group">
-                                    <label>Cash</label>
-                                    <input class="form-control" id="txtCash" min="0" type="number">
-                                    <span class="control-error"
-                                          id="cash-empty-error"></span>
+                                    <label>Cash :</label>
+                                    <input type="text" class="form-control" id="cashTxtOrderPage">
                                 </div>
                             </div>
                             <div class="col-6 mt-2">
                                 <div class="form-group">
-                                    <label>Discount</label>
-                                    <input class="form-control" id="txtDiscount" min="0" type="number">
+                                    <label>Discount :</label>
+                                    <input type="email" class="form-control" id="discountTxtOrderPage">
                                 </div>
                             </div>
                             <div class="col-8">
                                 <div class="form-group">
-                                    <label>Balance</label>
-                                    <input class="form-control" id="txtBalance" type="text">
+                                    <label>Balance :</label>
+                                    <input type="email" class="form-control" id="balanceTxtOrderPage">
                                 </div>
                             </div>
                             <div class="col-4 mt-4">
@@ -367,7 +362,6 @@
                     <tr>
                         <th>Item Code</th>
                         <th>Item Name</th>
-                        <th>Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
                     </tr>
@@ -389,7 +383,6 @@
 <script src="models/Customer.js"></script>
 <script src="models/Item.js"></script>
 <script src="models/Order.js"></script>
-<script src="models/OrderDetail.js"></script>
 <script src="controllers/CustomerController.js"></script>
 <script src="controllers/ItemController.js"></script>
 <script src="controllers/OrderController.js"></script>

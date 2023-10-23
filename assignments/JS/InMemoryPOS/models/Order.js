@@ -1,6 +1,6 @@
-let orderOb={
-    id:"",
-    customerId:"",
-    date:"",
-    orderDetail:[]
+var order = {
+    orderId : "",
+    customerId : "",
+    total : "",
+    date : ""
 }
