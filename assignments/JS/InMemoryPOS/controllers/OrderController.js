@@ -34,14 +34,28 @@ function loadItemIds() {
 //         alert("enough money")
 //     }
 // }
+//
+// function generateOrderId(){
+//     if(orderDB.length == 0){
+//         $('#txtOrderID').val(1);
+//     }else{
+//         $('#txtOrderID').val(orderDB.length + 2);
+//     }
+// }
+$(document).ready(function () {
+    // Find the maximum order ID from the order table
+    let maxOrderId = 0;
+    $('#orderTable tr').each(function () {
+        const orderId = parseInt($(this).find('td:eq(0)').text());
+        if (!isNaN(orderId) && orderId > maxOrderId) {
+            maxOrderId = orderId;
+        }
+    });
 
-function generateOrderId(){
-    if(orderDB.length == 0){
-        $('#txtOrderID').val(1);
-    }else{
-        $('#txtOrderID').val(orderDB.length + 2);
-    }
-}
+    // Set the txtOrderID to the next order ID
+    $('#txtOrderID').val(maxOrderId + 1);
+});
+
 
 
 $('#selectCusID').change(function(){
