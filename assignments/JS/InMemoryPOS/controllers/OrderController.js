@@ -151,6 +151,7 @@ $("#cashTxtOrderPage").keydown(function (e){
 });
 
 $('#btnSubmitOrder').click(function (){
+    const currentOrderId = parseInt($('#txtOrderID').val()) || 0;
 
     let totl =parseFloat( $('#total').text());
     let cash =parseFloat( $('#cashTxtOrderPage').val());
@@ -177,5 +178,14 @@ $('#btnSubmitOrder').click(function (){
     orderDB.push(order);
 
     $('#orderTable tr').remove();
+    $('#txtOrderID').val(currentOrderId + 1);
+
+    // Clear the order table
+    $('#orderTable tr').remove();
+
+    // Reset totalFinal
+    totalFinal = 0;
+    $('#total').text(totalFinal);
+    populateItemDropdown();
 
 });
