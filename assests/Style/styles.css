@@ -263,6 +263,9 @@ span{
 main>section:nth-child(5){
     height: 760px;
     position: relative;
+    background: url("../../assests/images/wp11585449-dark-office-wallpapers.jpg");
+    background-size: cover;
+    background-position: center;
 }
 main>section:nth-child(5)>div>h1{
     position: absolute;
@@ -302,7 +305,7 @@ main>section:nth-child(5)>section>div:first-child>a>i{
     color: white;
 }
 main>section:nth-child(5)>section>div:first-child:hover{
-    background-color: rgba(128, 128, 128, 0.38);
+    background-color: black;
     transition: 2s;
     cursor: pointer;
 }
@@ -329,7 +332,7 @@ main>section:nth-child(5)>section>div:last-child>a>i{
     color: white;
 }
 main>section:nth-child(5)>section>div:last-child:hover{
-    background-color: rgba(128, 128, 128, 0.38);
+    background-color: black;
     transition: 2s;
     cursor: pointer;
 }
